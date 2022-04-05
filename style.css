@@ -1,0 +1,103 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    margin: 2rem 0;
+}
+header h2{
+    text-align: center;
+
+}
+.box{
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 61px 7px #5e849c40;
+    padding: 50px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+    grid-gap: 25px;
+
+}
+.item{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s ease box-shadow;
+}
+.item h3{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    background-color: #00000040;
+    color: aliceblue;
+    bottom: -70px;
+    font-weight: 300;
+    transition: .5s ease-in-out bottom;
+}
+
+.item:hover h3{
+    bottom: 0;
+  }
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_input_header{
+    display: flex;
+    justify-content: space-between;
+}
+.inputare input {
+    outline: none;
+    border: none;
+    font-size: 19px;
+    border-bottom:1px solid rgb(212, 213, 216) ;
+    padding: 0 5px;
+    height: 35px;
+    color: rgb(72, 75, 95) ;
+    font-weight: 500;
+
+}
+.inputare input:focus{
+    border: none;
+    border-bottom: 1px solid rgb(53, 63, 90) ;
+}
+
+.user_input_header h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(155, 167, 253) ;
+}
+.button{
+    margin-top: 2rem;
+}
+button{
+    outline: none;
+    background: black;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media only screen and (min-width: 900px){
+.box {
+    max-width: 1160px;
+    padding: 50px;
+}
+}
